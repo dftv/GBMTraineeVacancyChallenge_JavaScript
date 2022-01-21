@@ -1,0 +1,10 @@
+Request API ✔
+Organize data ✔
+Organize elements ✔
+Make layout ✔
+Upload to GitHub ✔
+
+Layout link: https://xd.adobe.com/view/3484b35d-a360-4e94-b089-8afeec7695ab-61d7/screen/4b0c5f80-9007-471f-9138-c714b880a190
+
+API a ser consumida: https://api.tot.apigbmtech.com/api/selective-process/
+Autorização de consumo: authorization=67c9d5c3887b64c33671bb25f681753a

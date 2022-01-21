@@ -1,0 +1,520 @@
+* {
+    /*size - position*/
+
+    /*style*/
+    transition: .75s ease;
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica;
+
+    /*grid*/
+
+    /*var*/
+    --first-color: #033278;
+    --secondary-color: #fefaf8;
+    --tertiary-color: #f2f3f8;
+    --quaternary-color: #2c2c2a;
+    --quinary-color: #727274;
+    --senary-color: #39dd84;
+    --septenary-color: #780f02;
+}
+
+::-webkit-scrollbar {
+    /*size - position*/
+    width: 0;
+
+    /*style*/
+
+    /*grid*/
+}
+
+.container {
+    /*size - position*/
+    width: 100vw;
+    height: 100vh;
+
+    /*style*/
+
+    /*grid*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    /*size - position*/
+    width: 15vw;
+    height: 100vh;
+    align-self: flex-start;
+
+    /*style*/
+    background-color: var(--first-color);
+
+    /*grid*/
+}
+
+.sidebarContainerLogo {
+    /*size - position*/
+    width: 100%;
+    height: 10vh;
+
+    /*style*/
+
+    /*grid*/
+    align-self: center;
+}
+
+.sidebarLogo {
+    /*size - position*/
+    margin: 0.5vh;
+
+    /*style*/
+    fill: var(--secondary-color)
+        /*grid*/
+}
+
+.sidebarMenu {
+    /*size - position*/
+    width: 100%;
+    height: 90vh;
+
+    /*style*/
+
+    /*grid*/
+    align-self: center;
+}
+
+.sidebarTitle {
+    /*size - position*/
+    width: 100%;
+    margin: 0 0 0 2vh;
+
+    /*style*/
+    font-size: 2vh;
+    color: var(--secondary-color);
+
+    /*grid*/
+}
+
+.sidebarList {
+    /*size - position*/
+    width: 100%;
+
+    /*style*/
+    list-style-type: none;
+
+    /*grid*/
+}
+
+.sidebarListLink {
+    /*size - position*/
+    width: 75%;
+
+    /*style*/
+    color: var(--secondary-color);
+    text-decoration: none;
+
+    /*grid*/
+}
+
+.sidebarListedIcon {
+    /*size - position*/
+    width: 2.5vh;
+    height: 2.5vh;
+    margin: 0 1.5vh 0 0;
+
+    /*style*/
+    fill: var(--secondary-color);
+
+    /*grid*/
+}
+
+.generalContainer {
+    /*size - position*/
+    width: 85vw;
+    height: 100vh;
+
+    /*style*/
+
+    /*grid*/
+}
+
+.navbar {
+    /*size - position*/
+    width: 100%;
+    height: 10vh;
+
+    /*style*/
+    background-color: var(--tertiary-color);
+
+    /*grid*/
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+.navbarIconLink {
+    /*size - position*/
+    margin: 0 0 0 2vh;
+
+    /*style*/
+    text-decoration: none;
+
+    /*grid*/
+}
+
+.navbarIcon {
+    /*size - position*/
+    width: 7vh;
+    height: 7vh;
+
+
+    /*style*/
+    fill: var(--first-color);
+
+    /*grid*/
+    align-self: center;
+}
+
+.userContainer {
+    /*size - position*/
+    margin: 0 2vh 0 0;
+    /*style*/
+
+    /*grid*/
+    align-self: center;
+}
+
+.userIcon {
+    /*size - position*/
+    width: 5vh;
+    height: 5vh;
+
+    /*style*/
+    fill: var(--first-color);
+
+    /*grid*/
+}
+
+.userStatus {
+    /*size - position*/
+    position: absolute;
+    height: 1.5vh;
+    width: 1.5vh;
+    margin: 4vh 0 0 1vh;
+
+    /*style*/
+    background-color: var(--senary-color);
+    border-radius: 50%;
+
+    /*grid*/
+}
+
+.userLevel {
+    /*size - position*/
+    margin: 1vh;
+
+    /*style*/
+
+    /*grid*/
+    align-self: center;
+}
+
+.userLevelLink {
+    /*size - position*/
+
+    /*style*/
+    font-size: 1.5vh;
+    color: var(--quinary-color);
+    text-decoration: none;
+
+    /*grid*/
+}
+
+.userLevelIcon {
+    /*size - position*/
+    width: 1.5vh;
+    height: 1.5vh;
+
+    /*style*/
+    fill: var(--quinary-color);
+
+    /*grid*/
+    align-self: center;
+}
+
+.content {
+    /*size - position*/
+    width: 100%;
+    height: 100%;
+
+    /*style*/
+    overflow: scroll;
+
+    /*grid*/
+}
+
+.contentHeader {
+    /*size - position*/
+    width: 82.5vw;
+    height: fit-content;
+    margin: 2.5vh 0 0 2.5vh;
+
+    /*style*/
+
+    /*grid*/
+    justify-content: space-between;
+}
+
+.contentTitle {
+    /*size - position*/
+
+    /*style*/
+    font-weight: bold;
+
+    /*grid*/
+    align-self: center;
+}
+
+.searchApiButton {
+    /*size - position*/
+    width: 12.5vw;
+    height: 6vh;
+    margin: 0 2.5vh 0 0;
+
+    /*style*/
+    background-color: var(--first-color);
+    color: var(--secondary-color);
+    border-radius: 1.5vh;
+    font-size: 1.5vh;
+    border: 0;
+    outline: 0;
+
+    /*grid*/
+}
+
+.searchApiButton:hover {
+    /*size - position*/
+
+    /*style*/
+    border: 0.5vh solid var(--first-color);
+    background-color: var(--secondary-color);
+    ;
+    color: var(--first-color);
+
+    /*grid*/
+}
+
+.contentBody {
+    /*size - position*/
+    width: 82.5vw;
+    height: 100%;
+    margin: 2.5vh 0 0 2.5vh;
+
+    /*style*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    /*grid*/
+}
+
+.contentTable {
+    /*size - position*/
+    width: 100%;
+
+    /*style*/
+
+    /*grid*/
+}
+
+.contentTableTitles th {
+    /*size - position*/
+    padding: 0 0 2vh 0;
+
+    /*style*/
+    font-weight: bold;
+    font-size: 2vh;
+    text-align: left;
+    /*grid*/
+}
+
+.contentTableResults td{
+    /*size - position*/
+    padding: 1vh 0 1vh 0;
+
+    /*style*/
+    font-size: 1.5vh;
+
+    /*grid*/
+}
+
+.contentTableTotal td {
+    /*size - position*/
+
+    /*style*/
+    font-weight: bold;
+    font-size: 2vh;
+    text-align: left;
+
+    /*grid*/
+}
+
+.contentBodyBaseboard {
+    /*size - position*/
+
+    /*style*/
+
+    /*grid*/
+}
+
+.contentBodyBaseboardTitle {
+    /*size - position*/
+    padding: 0 0 2vh 0;
+
+    /*style*/
+    font-weight: bold;
+    font-size: 2vh;
+    text-align: left;
+    /*grid*/
+}
+
+.tableGroup {
+    /*size - position*/
+    width: 90%;
+    height: fit-content;
+
+    /*style*/
+
+    /*grid*/
+    justify-content: space-between;
+}
+
+.totalTable {
+    /*size - position*/
+    width: 25%;
+
+    /*style*/
+
+    /*grid*/
+}
+
+.totalTableTitles th, .totalTableTitles td {
+    /*size - position*/
+
+    /*style*/
+    font-size: 1.5vh;
+    text-align: center;
+
+    /*grid*/
+}
+
+.bold {
+    /*size - position*/
+
+    /*style*/
+    font-weight: bold;
+
+    /*grid*/
+}
+
+.contentComment{
+    /*size - position*/
+    width: 100%;
+    height: fit-content;
+    margin: 2.5vh 0 0 0;
+
+    /*style*/
+
+    /*grid*/
+}
+
+.commentTitle {
+    /*size - position*/
+
+    /*style*/
+    font-weight: bold;
+    font-size: 2vh;
+    /*grid*/
+}
+
+.editCommentButton {
+    /*size - position*/
+    width: 5vw;
+    height: 2.5vh;
+    margin: 0 0 0 2vh;
+
+    /*style*/
+    background-color: var(--first-color);
+    color: var(--secondary-color);
+    border-radius: 0.5vh;
+    font-size: 1.5vh;
+    border: 0;
+    outline: 0;
+
+    /*grid*/
+}
+
+.editCommentButton:hover {
+    /*size - position*/
+
+    /*style*/
+    border: 0.5vh solid var(--first-color);
+    background-color: var(--secondary-color);
+    ;
+    color: var(--first-color);
+
+    /*grid*/
+}
+
+.cancelCommentButton {
+    /*size - position*/
+    width: 5vw;
+    height: 2.5vh;
+    margin: 0 0 0 2vh;
+
+    /*style*/
+    background-color: var(--septenary-color);
+    color: var(--secondary-color);
+    border-radius: 0.5vh;
+    font-size: 1.5vh;
+    border: 0;
+    outline: 0;
+
+    /*grid*/
+}
+
+.cancelCommentButton:hover {
+    /*size - position*/
+
+    /*style*/
+    border: 0.5vh solid var(--septenary-color);
+    background-color: var(--secondary-color);
+    ;
+    color: var(--septenary-color);
+
+    /*grid*/
+}
+
+.commentText {
+    /*size - position*/
+    width: 95%;
+    height: 5vh;
+    margin: 2vh 0 0 0;
+    padding: 1.5vh;
+    resize: none;
+
+    /*style*/
+    border-radius: 2.5vh;
+    font-size: 1.5vh;
+
+    /*grid*/
+}
