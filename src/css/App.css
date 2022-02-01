@@ -42,11 +42,21 @@
 }
 
 .flexRow {
+    /*size - position*/
+    
+    /*style*/
+    
+    /*grid*/
     display: flex;
     flex-direction: row;
 }
 
 .flexColumn {
+    /*size - position*/
+    
+    /*style*/
+    
+    /*grid*/
     display: flex;
     flex-direction: column;
 }
@@ -80,7 +90,8 @@
 
     /*style*/
     fill: var(--secondary-color)
-        /*grid*/
+    
+    /*grid*/
 }
 
 .sidebarMenu {
@@ -188,6 +199,7 @@
 .userContainer {
     /*size - position*/
     margin: 0 2vh 0 0;
+    
     /*style*/
 
     /*grid*/
@@ -308,7 +320,6 @@
     /*style*/
     border: 0.5vh solid var(--first-color);
     background-color: var(--secondary-color);
-    ;
     color: var(--first-color);
 
     /*grid*/
@@ -344,6 +355,7 @@
     font-weight: bold;
     font-size: 2vh;
     text-align: left;
+    
     /*grid*/
 }
 
@@ -384,6 +396,7 @@
     font-weight: bold;
     font-size: 2vh;
     text-align: left;
+    
     /*grid*/
 }
 
@@ -443,6 +456,7 @@
     /*style*/
     font-weight: bold;
     font-size: 2vh;
+    
     /*grid*/
 }
 
@@ -469,7 +483,6 @@
     /*style*/
     border: 0.5vh solid var(--first-color);
     background-color: var(--secondary-color);
-    ;
     color: var(--first-color);
 
     /*grid*/
@@ -498,7 +511,6 @@
     /*style*/
     border: 0.5vh solid var(--septenary-color);
     background-color: var(--secondary-color);
-    ;
     color: var(--septenary-color);
 
     /*grid*/
